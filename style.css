@@ -1,4 +1,4 @@
-/* @media screen and (min-width: 768px){ */
+
   html, body {
     touch-action: manipulation;
 }
@@ -86,28 +86,14 @@
   font-size: 14px;
   white-space: nowrap;
 }
-
-
 .nav-element:hover span {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
 }
-
 .nav-element:last-child {
   margin-top: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
 .main{
   position: absolute;
   width: 78vw; height: 85vh;
@@ -133,7 +119,6 @@
 .lemon:active {
   transform: scale(1.05);
 }
-
 .count {
   font-size: 48px; 
   font-weight: bold; 
@@ -146,15 +131,12 @@
   border: 3px solid #ffb300; 
   transition: transform 0.2s linear, scale 0.2s linear; 
 }
-
 .count:active {
   transform: scale(1.05);
 }
-
 .lemon:active .count{
   scale: 1.05;
 }
-
 .username{
   display: flex;
   font-size: 32px;
@@ -170,7 +152,6 @@
   margin-top: 15px;
   margin-left: -2px;
 }
-
 .setti{
   position: absolute;
   right: 20px;
@@ -178,5 +159,67 @@
 }
 
 
-  /* } */
-   
+
+
+
+
+
+
+
+@media screen and (min-width: 1300px){
+
+  body{
+    user-select: none;
+  }
+  .nav-column{
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+  .nav-element{
+    height: max-content;
+  }
+  .colors-change {
+    display: none;
+  }
+  
+  .colors-change.visible {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    height: max-content;
+    gap: 50px;
+    position: absolute;
+    top: 87.5vh;
+    right: 23vw;
+    padding: 0px 30px;
+  }
+
+  .main{
+    width: 100%; height: 80%;
+    top: 10vh;
+  }
+
+  .info{
+    position: absolute;
+    bottom: -60px;
+    display: none;
+  }
+  .setti{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+  }
+  .username{
+    background-color: rgba(0, 0, 255, 0.392);
+    padding-left: 20px;
+    padding-right: 230px;
+    transform: translate(20px, -10px);
+  }
+  .lemon{
+    margin-top: 13.5vh;
+  }
+  .count{
+    margin-top: 20px;
+  }
+}
