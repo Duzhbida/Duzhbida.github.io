@@ -35,7 +35,7 @@
                     <li class="color" id="c3" data-color="rgba(124, 100, 246, 0.5)"></li>
                     <li class="color" id="c4" data-color="rgba(0, 255, 30, 0.5)"></li>                    
             </li> </ul>
-            <li class="nav-element">
+            <li class="nav-element info">
                 <img src="./assets/icons/info.png" alt="info">
                 <span>Info</span>
             </li>
