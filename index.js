@@ -30,3 +30,33 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
+
+
+
+function toggleColorsChange() {
+    const theme = document.querySelector(".theme");
+    const colorsChange = document.querySelector(".colors-change");
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
+  
+    if (!theme || !colorsChange) return;
+  
+    function handleClick() {
+      if (mediaQuery.matches) {
+        colorsChange.classList.toggle("visible");
+      }
+    }
+  
+    theme.addEventListener("click", handleClick);
+
+    mediaQuery.addEventListener("change", (e) => {
+      if (!e.matches) colorsChange.classList.remove("visible");
+    });
+  }
+  
+  toggleColorsChange();
+  
+
+
+
+
